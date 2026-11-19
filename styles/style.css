@@ -301,9 +301,12 @@
   block-size: 39px;
 }
 
-.dialog__button {
+.dialog__form {
   grid-column: 1 / -1;
   grid-row: 2;
+}
+
+.dialog__button {
   inline-size: 100%;
 }
 
