@@ -11,3 +11,12 @@ dialogCloseButton.addEventListener('click', (event) => {
   event.preventDefault();
   dialog.close();
 });
+
+dialog.addEventListener('submit', (event) => {
+  event.preventDefault();
+});
+
+dialog.addEventListener('cancel', (event) => {
+  event.preventDefault();
+  dialog.close();
+});
