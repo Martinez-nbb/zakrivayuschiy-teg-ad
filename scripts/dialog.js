@@ -2,6 +2,12 @@ const saveButton = document.querySelector('.more-button');
 const dialog = document.getElementById('save-dialog');
 const dialogCloseButton = document.querySelector('.dialog__button');
 
-saveButton.onclick = () => dialog.showModal();
+saveButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  dialog.showModal();
+});
 
-dialogCloseButton.onclick = () => dialog.close();
+dialogCloseButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  dialog.close();
+});
